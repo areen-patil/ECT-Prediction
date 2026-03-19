@@ -210,7 +210,7 @@ python ect_log_stats.py
 
 ## Acknowledgements
 
-This work was conducted in collaboration with **NIMHANS, Bengaluru**, under the supervision of **Prof. Sakshi Arora**. Data collection and clinical context were provided by the NIMHANS psychiatry and neurophysiology teams.
+This work is being conducted in collaboration with **NIMHANS, Bengaluru**, under the supervision of **Prof. Sakshi Arora**. Data collection and clinical context were provided by the NIMHANS psychiatry and neurophysiology teams.
 
 ---
 
