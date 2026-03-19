@@ -1,0 +1,1672 @@
+ECT Batch Detection Run — v4 (Wavelet + LF/HF)
+Started : 2026-03-18 03:55:21
+Base dir: C:\Users\AREEN PATIL\Desktop\self\ECT_EEG_Work\csv_8ch_512Hz\csv_8ch_512Hz
+Total files: 97
+============================================================
+────────────────────────────────────────────────────────────
+Patient : csv_8ch_512Hz
+File    : batch_results.csv
+Runtime : 0.0 s
+Status  : ERROR
+Error   : KeyError: 'Time_s'
+Traceback:
+Traceback (most recent call last):
+  File "C:\Users\AREEN PATIL\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Time_s'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\AREEN PATIL\Desktop\self\ECT_EEG_Work\csv_8ch_512Hz\csv_8ch_512Hz\ect_batch_runner_v4.py", line 422, in main
+    result  = run_pipeline(filepath)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\AREEN PATIL\Desktop\self\ECT_EEG_Work\csv_8ch_512Hz\csv_8ch_512Hz\ect_batch_runner_v4.py", line 149, in run_pipeline
+    time = raw["Time_s"].values
+           ~~~^^^^^^^^^^
+  File "C:\Users\AREEN PATIL\AppData\Roaming\Python\Python311\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AREEN PATIL\AppData\Roaming\Python\Python311\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Time_s'
+
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11004
+File    : 2ASZPCRC11004.csv
+Runtime : 10.5 s
+Fs      : 512 Hz
+Duration: 517.6 s
+Windows : 1032
+R-peaks : 840  (avg HR: 97.4 bpm)
+Iso Forest flags : 52
+GMM flags        : 12
+Score flags      : 27
+Ensemble flags   : 27
+Seizure DETECTED ✓
+  Onset    : 307.5 s
+  Offset   : 517.5 s
+  Duration : 210.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11004
+File    : 2BSZPCRC11004.csv
+Runtime : 4.1 s
+Fs      : 512 Hz
+Duration: 203.2 s
+Windows : 403
+R-peaks : 349  (avg HR: 102.9 bpm)
+Iso Forest flags : 21
+GMM flags        : 35
+Score flags      : 45
+Ensemble flags   : 38
+Seizure DETECTED ✓
+  Onset    : 31.0 s
+  Offset   : 203.0 s
+  Duration : 172.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11004
+File    : 2CSZPCRC11004.csv
+Runtime : 6.2 s
+Fs      : 512 Hz
+Duration: 276.9 s
+Windows : 550
+R-peaks : 545  (avg HR: 117.9 bpm)
+Iso Forest flags : 28
+GMM flags        : 226
+Score flags      : 0
+Ensemble flags   : 2
+Seizure DETECTED ✓
+  Onset    : 96.0 s
+  Offset   : 163.5 s
+  Duration : 67.5 s
+  PSI      : 4.7%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11004
+File    : 2DSZPCRC11004.csv
+Runtime : 7.7 s
+Fs      : 512 Hz
+Duration: 364.7 s
+Windows : 726
+R-peaks : 599  (avg HR: 98.4 bpm)
+Iso Forest flags : 37
+GMM flags        : 21
+Score flags      : 26
+Ensemble flags   : 26
+Seizure DETECTED ✓
+  Onset    : 179.5 s
+  Offset   : 364.5 s
+  Duration : 185.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11004
+File    : 2ESZPCRC11004.csv
+Runtime : 5.6 s
+Fs      : 512 Hz
+Duration: 236.2 s
+Windows : 469
+R-peaks : 367  (avg HR: 93.4 bpm)
+Iso Forest flags : 24
+GMM flags        : 142
+Score flags      : 14
+Ensemble flags   : 24
+Seizure DETECTED ✓
+  Onset    : 34.0 s
+  Offset   : 78.0 s
+  Duration : 44.0 s
+  PSI      : 31.6%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11004
+File    : 2FSZPCRC11004.csv
+Runtime : 7.2 s
+Fs      : 512 Hz
+Duration: 347.0 s
+Windows : 691
+R-peaks : 560  (avg HR: 96.8 bpm)
+Iso Forest flags : 35
+GMM flags        : 72
+Score flags      : 66
+Ensemble flags   : 66
+Seizure DETECTED ✓
+  Onset    : 293.0 s
+  Offset   : 346.0 s
+  Duration : 53.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11004
+File    : 2GSZPCRC11004.csv
+Runtime : 4.7 s
+Fs      : 512 Hz
+Duration: 226.4 s
+Windows : 449
+R-peaks : 365  (avg HR: 96.7 bpm)
+Iso Forest flags : 23
+GMM flags        : 40
+Score flags      : 36
+Ensemble flags   : 38
+Seizure DETECTED ✓
+  Onset    : 201.0 s
+  Offset   : 226.0 s
+  Duration : 25.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11004
+File    : 2HSZPCRC11004.csv
+Runtime : 10.0 s
+Fs      : 512 Hz
+Duration: 471.0 s
+Windows : 939
+R-peaks : 722  (avg HR: 92.0 bpm)
+Iso Forest flags : 47
+GMM flags        : 16
+Score flags      : 39
+Ensemble flags   : 0
+Seizure NOT detected
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11004
+File    : 2ISZPCRC11004.csv
+Runtime : 7.4 s
+Fs      : 512 Hz
+Duration: 319.6 s
+Windows : 636
+R-peaks : 458  (avg HR: 85.9 bpm)
+Iso Forest flags : 32
+GMM flags        : 23
+Score flags      : 27
+Ensemble flags   : 28
+Seizure DETECTED ✓
+  Onset    : 142.0 s
+  Offset   : 317.0 s
+  Duration : 175.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11004
+File    : 2JSZPCRC11004.csv
+Runtime : 5.9 s
+Fs      : 512 Hz
+Duration: 255.5 s
+Windows : 508
+R-peaks : 444  (avg HR: 104.1 bpm)
+Iso Forest flags : 26
+GMM flags        : 6
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 150.0 s
+  Offset   : 157.0 s
+  Duration : 7.0 s
+  PSI      : 89.1%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11008
+File    : 2ASZPCRC11008.csv
+Runtime : 6.3 s
+Fs      : 512 Hz
+Duration: 290.9 s
+Windows : 578
+R-peaks : 636  (avg HR: 131.1 bpm)
+Iso Forest flags : 29
+GMM flags        : 6
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 152.5 s
+  Offset   : 202.5 s
+  Duration : 50.0 s
+  PSI      : 73.0%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11008
+File    : 2BSZPCRC11008.csv
+Runtime : 6.3 s
+Fs      : 512 Hz
+Duration: 293.2 s
+Windows : 583
+R-peaks : 604  (avg HR: 123.4 bpm)
+Iso Forest flags : 30
+GMM flags        : 13
+Score flags      : 22
+Ensemble flags   : 22
+Seizure DETECTED ✓
+  Onset    : 182.0 s
+  Offset   : 293.0 s
+  Duration : 111.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11008
+File    : 2CSZPCRC11008.csv
+Runtime : 5.9 s
+Fs      : 512 Hz
+Duration: 292.4 s
+Windows : 581
+R-peaks : 493  (avg HR: 101.4 bpm)
+Iso Forest flags : 29
+GMM flags        : 11
+Score flags      : 20
+Ensemble flags   : 20
+Seizure DETECTED ✓
+  Onset    : 191.0 s
+  Offset   : 264.5 s
+  Duration : 73.5 s
+  PSI      : 97.2%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11008
+File    : 2DSZPCRC11008.csv
+Runtime : 6.5 s
+Fs      : 512 Hz
+Duration: 320.4 s
+Windows : 637
+R-peaks : 565  (avg HR: 105.9 bpm)
+Iso Forest flags : 32
+GMM flags        : 4
+Score flags      : 10
+Ensemble flags   : 10
+Seizure DETECTED ✓
+  Onset    : 221.0 s
+  Offset   : 227.5 s
+  Duration : 6.5 s
+  PSI      : 86.7%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11008
+File    : 2ESZPCRC11008.csv
+Runtime : 5.5 s
+Fs      : 512 Hz
+Duration: 259.1 s
+Windows : 515
+R-peaks : 441  (avg HR: 102.2 bpm)
+Iso Forest flags : 26
+GMM flags        : 6
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 193.5 s
+  Offset   : 199.5 s
+  Duration : 6.0 s
+  PSI      : 86.5%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11008
+File    : 2FSZPCRC11008.csv
+Runtime : 5.3 s
+Fs      : 512 Hz
+Duration: 258.9 s
+Windows : 514
+R-peaks : 433  (avg HR: 100.3 bpm)
+Iso Forest flags : 26
+GMM flags        : 5
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 170.5 s
+  Offset   : 176.5 s
+  Duration : 6.0 s
+  PSI      : 85.4%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11008
+File    : 2GSZPCRC11008.csv
+Runtime : 6.8 s
+Fs      : 512 Hz
+Duration: 304.0 s
+Windows : 605
+R-peaks : 443  (avg HR: 87.3 bpm)
+Iso Forest flags : 31
+GMM flags        : 50
+Score flags      : 25
+Ensemble flags   : 36
+Seizure DETECTED ✓
+  Onset    : 192.0 s
+  Offset   : 301.0 s
+  Duration : 109.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11008
+File    : 2HSZPCRC11008.csv
+Runtime : 7.3 s
+Fs      : 512 Hz
+Duration: 342.4 s
+Windows : 681
+R-peaks : 369  (avg HR: 89.9 bpm)
+Iso Forest flags : 34
+GMM flags        : 6
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 266.0 s
+  Offset   : 272.0 s
+  Duration : 6.0 s
+  PSI      : 85.3%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11008
+File    : 2ISZPCRC11008.csv
+Runtime : 8.3 s
+Fs      : 512 Hz
+Duration: 377.2 s
+Windows : 751
+R-peaks : 630  (avg HR: 100.2 bpm)
+Iso Forest flags : 38
+GMM flags        : 5
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 242.0 s
+  Offset   : 248.0 s
+  Duration : 6.0 s
+  PSI      : 88.3%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11008
+File    : 2JSZPCRC11008.csv
+Runtime : 7.2 s
+Fs      : 512 Hz
+Duration: 336.6 s
+Windows : 670
+R-peaks : 545  (avg HR: 97.1 bpm)
+Iso Forest flags : 34
+GMM flags        : 18
+Score flags      : 27
+Ensemble flags   : 26
+Seizure DETECTED ✓
+  Onset    : 169.5 s
+  Offset   : 200.5 s
+  Duration : 31.0 s
+  PSI      : 45.3%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11008
+File    : 2KSZPCRC11008.csv
+Runtime : 4.4 s
+Fs      : 512 Hz
+Duration: 198.0 s
+Windows : 393
+R-peaks : 326  (avg HR: 99.0 bpm)
+Iso Forest flags : 20
+GMM flags        : 6
+Score flags      : 8
+Ensemble flags   : 8
+Seizure DETECTED ✓
+  Onset    : 94.5 s
+  Offset   : 100.0 s
+  Duration : 5.5 s
+  PSI      : 79.7%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11010
+File    : 2ASZPCRC11010.csv
+Runtime : 7.5 s
+Fs      : 512 Hz
+Duration: 363.1 s
+Windows : 723
+R-peaks : 564  (avg HR: 93.2 bpm)
+Iso Forest flags : 37
+GMM flags        : 23
+Score flags      : 60
+Ensemble flags   : 27
+Seizure DETECTED ✓
+  Onset    : 220.5 s
+  Offset   : 314.5 s
+  Duration : 94.0 s
+  PSI      : 61.7%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11010
+File    : 2BSZPCRC11010.csv
+Runtime : 12.0 s
+Fs      : 512 Hz
+Duration: 648.0 s
+Windows : 1293
+R-peaks : 1073  (avg HR: 99.3 bpm)
+Iso Forest flags : 65
+GMM flags        : 5
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 556.5 s
+  Offset   : 562.5 s
+  Duration : 6.0 s
+  PSI      : 85.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11010
+File    : 2CSZPCRC11010.csv
+Runtime : 7.7 s
+Fs      : 512 Hz
+Duration: 389.4 s
+Windows : 775
+R-peaks : 637  (avg HR: 98.1 bpm)
+Iso Forest flags : 39
+GMM flags        : 23
+Score flags      : 50
+Ensemble flags   : 29
+Seizure DETECTED ✓
+  Onset    : 201.5 s
+  Offset   : 388.0 s
+  Duration : 186.5 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11010
+File    : 2DSZPCRC11010.csv
+Runtime : 5.1 s
+Fs      : 512 Hz
+Duration: 253.1 s
+Windows : 503
+R-peaks : 427  (avg HR: 101.6 bpm)
+Iso Forest flags : 26
+GMM flags        : 6
+Score flags      : 10
+Ensemble flags   : 10
+Seizure DETECTED ✓
+  Onset    : 142.0 s
+  Offset   : 148.5 s
+  Duration : 6.5 s
+  PSI      : 91.7%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11010
+File    : 2ESZPCRC11010.csv
+Runtime : 3.5 s
+Fs      : 512 Hz
+Duration: 178.7 s
+Windows : 354
+R-peaks : 294  (avg HR: 99.3 bpm)
+Iso Forest flags : 18
+GMM flags        : 6
+Score flags      : 10
+Ensemble flags   : 10
+Seizure DETECTED ✓
+  Onset    : 114.5 s
+  Offset   : 121.0 s
+  Duration : 6.5 s
+  PSI      : 71.3%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11010
+File    : 2FSZPCRC11010.csv
+Runtime : 4.0 s
+Fs      : 512 Hz
+Duration: 204.1 s
+Windows : 405
+R-peaks : 365  (avg HR: 107.9 bpm)
+Iso Forest flags : 21
+GMM flags        : 7
+Score flags      : 10
+Ensemble flags   : 10
+Seizure DETECTED ✓
+  Onset    : 62.5 s
+  Offset   : 69.0 s
+  Duration : 6.5 s
+  PSI      : 82.3%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11010
+File    : 2GSZPCRC11010.csv
+Runtime : 5.1 s
+Fs      : 512 Hz
+Duration: 270.2 s
+Windows : 537
+R-peaks : 445  (avg HR: 98.8 bpm)
+Iso Forest flags : 27
+GMM flags        : 33
+Score flags      : 36
+Ensemble flags   : 34
+Seizure DETECTED ✓
+  Onset    : 185.5 s
+  Offset   : 268.5 s
+  Duration : 83.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11010
+File    : 2HSZPCRC11010.csv
+Runtime : 6.5 s
+Fs      : 512 Hz
+Duration: 335.0 s
+Windows : 667
+R-peaks : 516  (avg HR: 92.5 bpm)
+Iso Forest flags : 34
+GMM flags        : 30
+Score flags      : 24
+Ensemble flags   : 28
+Seizure DETECTED ✓
+  Onset    : 176.5 s
+  Offset   : 246.0 s
+  Duration : 69.5 s
+  PSI      : 35.1%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11014
+File    : 2ASZPCRC11014.csv
+Runtime : 10.7 s
+Fs      : 512 Hz
+Duration: 597.9 s
+Windows : 1192
+R-peaks : 921  (avg HR: 92.4 bpm)
+Iso Forest flags : 60
+GMM flags        : 36
+Score flags      : 55
+Ensemble flags   : 51
+Seizure DETECTED ✓
+  Onset    : 429.5 s
+  Offset   : 597.5 s
+  Duration : 168.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11014
+File    : 2CSZPCRC11014.csv
+Runtime : 6.3 s
+Fs      : 512 Hz
+Duration: 331.6 s
+Windows : 660
+R-peaks : 511  (avg HR: 92.3 bpm)
+Iso Forest flags : 33
+GMM flags        : 4
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 182.0 s
+  Offset   : 330.0 s
+  Duration : 148.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11014
+File    : 2DSZPCRC11014.csv
+Runtime : 4.3 s
+Fs      : 512 Hz
+Duration: 227.6 s
+Windows : 452
+R-peaks : 366  (avg HR: 96.5 bpm)
+Iso Forest flags : 23
+GMM flags        : 7
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 70.5 s
+  Offset   : 187.0 s
+  Duration : 116.5 s
+  PSI      : 53.2%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11014
+File    : 2ESZPCRC11014.csv
+Runtime : 5.0 s
+Fs      : 512 Hz
+Duration: 251.0 s
+Windows : 499
+R-peaks : 404  (avg HR: 96.8 bpm)
+Iso Forest flags : 25
+GMM flags        : 5
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 117.0 s
+  Offset   : 123.0 s
+  Duration : 6.0 s
+  PSI      : 79.7%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11014
+File    : 2FSZPCRC11014.csv
+Runtime : 0.0 s
+Status  : ERROR
+Error   : ValueError: cannot convert float NaN to integer
+Traceback:
+Traceback (most recent call last):
+  File "c:\Users\AREEN PATIL\Desktop\self\ECT_EEG_Work\csv_8ch_512Hz\csv_8ch_512Hz\ect_batch_runner_v4.py", line 422, in main
+    result  = run_pipeline(filepath)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\AREEN PATIL\Desktop\self\ECT_EEG_Work\csv_8ch_512Hz\csv_8ch_512Hz\ect_batch_runner_v4.py", line 150, in run_pipeline
+    FS   = infer_fs(time)
+           ^^^^^^^^^^^^^^
+  File "c:\Users\AREEN PATIL\Desktop\self\ECT_EEG_Work\csv_8ch_512Hz\csv_8ch_512Hz\ect_batch_runner_v4.py", line 60, in infer_fs
+    return round(1.0 / dt)
+           ^^^^^^^^^^^^^^^
+ValueError: cannot convert float NaN to integer
+
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11014
+File    : 2GSZPCRC11014.csv
+Runtime : 2.6 s
+Fs      : 512 Hz
+Duration: 123.2 s
+Windows : 243
+R-peaks : 185  (avg HR: 89.6 bpm)
+Iso Forest flags : 13
+GMM flags        : 107
+Score flags      : 0
+Ensemble flags   : 2
+Seizure DETECTED ✓
+  Onset    : 14.5 s
+  Offset   : 17.0 s
+  Duration : 2.5 s
+  PSI      : 57.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11014
+File    : 2ISZPCRC11014.csv
+Runtime : 4.5 s
+Fs      : 512 Hz
+Duration: 198.6 s
+Windows : 394
+R-peaks : 348  (avg HR: 104.9 bpm)
+Iso Forest flags : 20
+GMM flags        : 101
+Score flags      : 5
+Ensemble flags   : 7
+Seizure DETECTED ✓
+  Onset    : 0.0 s
+  Offset   : 99.5 s
+  Duration : 99.5 s
+  PSI      : 6.5%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11015
+File    : 2ASZPCRC11015.csv
+Runtime : 7.4 s
+Fs      : 512 Hz
+Duration: 372.9 s
+Windows : 742
+R-peaks : 657  (avg HR: 105.8 bpm)
+Iso Forest flags : 38
+GMM flags        : 86
+Score flags      : 56
+Ensemble flags   : 56
+Seizure DETECTED ✓
+  Onset    : 227.5 s
+  Offset   : 352.0 s
+  Duration : 124.5 s
+  PSI      : 0.0%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11015
+File    : 2BSZPCRC11015.csv
+Runtime : 7.3 s
+Fs      : 512 Hz
+Duration: 367.5 s
+Windows : 732
+R-peaks : 577  (avg HR: 94.3 bpm)
+Iso Forest flags : 37
+GMM flags        : 102
+Score flags      : 42
+Ensemble flags   : 44
+Seizure DETECTED ✓
+  Onset    : 172.5 s
+  Offset   : 346.5 s
+  Duration : 174.0 s
+  PSI      : 32.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11015
+File    : 2CSZPCRC11015.csv
+Runtime : 4.4 s
+Fs      : 512 Hz
+Duration: 227.5 s
+Windows : 452
+R-peaks : 431  (avg HR: 114.2 bpm)
+Iso Forest flags : 23
+GMM flags        : 8
+Score flags      : 37
+Ensemble flags   : 16
+Seizure DETECTED ✓
+  Onset    : 99.0 s
+  Offset   : 121.5 s
+  Duration : 22.5 s
+  PSI      : 33.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11015
+File    : 2DSZPCRC11015.csv
+Runtime : 5.6 s
+Fs      : 512 Hz
+Duration: 287.5 s
+Windows : 572
+R-peaks : 466  (avg HR: 97.6 bpm)
+Iso Forest flags : 29
+GMM flags        : 9
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 156.5 s
+  Offset   : 163.5 s
+  Duration : 7.0 s
+  PSI      : 91.2%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11015
+File    : 2ESZPCRC11015.csv
+Runtime : 7.2 s
+Fs      : 512 Hz
+Duration: 342.7 s
+Windows : 682
+R-peaks : 596  (avg HR: 104.5 bpm)
+Iso Forest flags : 35
+GMM flags        : 18
+Score flags      : 30
+Ensemble flags   : 23
+Seizure DETECTED ✓
+  Onset    : 97.5 s
+  Offset   : 332.0 s
+  Duration : 234.5 s
+  PSI      : 48.7%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11015
+File    : 2FSZPCRC11015.csv
+Runtime : 6.1 s
+Fs      : 512 Hz
+Duration: 281.1 s
+Windows : 559
+R-peaks : 500  (avg HR: 106.6 bpm)
+Iso Forest flags : 28
+GMM flags        : 9
+Score flags      : 12
+Ensemble flags   : 12
+Seizure DETECTED ✓
+  Onset    : 187.5 s
+  Offset   : 195.0 s
+  Duration : 7.5 s
+  PSI      : 88.2%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11015
+File    : 2GSZPCRC11015.csv
+Runtime : 2.4 s
+Fs      : 512 Hz
+Duration: 119.5 s
+Windows : 236
+R-peaks : 194  (avg HR: 97.1 bpm)
+Iso Forest flags : 12
+GMM flags        : 121
+Score flags      : 5
+Ensemble flags   : 0
+Seizure NOT detected
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11015
+File    : 2ISZPCRC11015.csv
+Runtime : 3.2 s
+Fs      : 512 Hz
+Duration: 162.4 s
+Windows : 321
+R-peaks : 351  (avg HR: 129.4 bpm)
+Iso Forest flags : 16
+GMM flags        : 6
+Score flags      : 14
+Ensemble flags   : 8
+Seizure DETECTED ✓
+  Onset    : 0.0 s
+  Offset   : 68.5 s
+  Duration : 68.5 s
+  PSI      : 1.4%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11015
+File    : 2JSZPCRC11015.csv
+Runtime : 4.1 s
+Fs      : 512 Hz
+Duration: 208.0 s
+Windows : 413
+R-peaks : 449  (avg HR: 129.5 bpm)
+Iso Forest flags : 21
+GMM flags        : 8
+Score flags      : 14
+Ensemble flags   : 14
+Seizure DETECTED ✓
+  Onset    : 95.5 s
+  Offset   : 208.0 s
+  Duration : 112.5 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11017
+File    : 2ASZPCRC11017.csv
+Runtime : 5.9 s
+Fs      : 512 Hz
+Duration: 305.0 s
+Windows : 607
+R-peaks : 502  (avg HR: 99.0 bpm)
+Iso Forest flags : 31
+GMM flags        : 6
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 144.0 s
+  Offset   : 192.0 s
+  Duration : 48.0 s
+  PSI      : 89.5%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11017
+File    : 2BSZPCRC11017.csv
+Runtime : 7.1 s
+Fs      : 512 Hz
+Duration: 314.6 s
+Windows : 626
+R-peaks : 533  (avg HR: 101.5 bpm)
+Iso Forest flags : 32
+GMM flags        : 13
+Score flags      : 18
+Ensemble flags   : 18
+Seizure DETECTED ✓
+  Onset    : 131.5 s
+  Offset   : 190.0 s
+  Duration : 58.5 s
+  PSI      : 88.2%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11017
+File    : 2DSZPCRC11017.csv
+Runtime : 6.7 s
+Fs      : 512 Hz
+Duration: 346.4 s
+Windows : 689
+R-peaks : 609  (avg HR: 105.4 bpm)
+Iso Forest flags : 35
+GMM flags        : 16
+Score flags      : 25
+Ensemble flags   : 25
+Seizure DETECTED ✓
+  Onset    : 119.0 s
+  Offset   : 346.0 s
+  Duration : 227.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11017
+File    : 2ESZPCRC11017.csv
+Runtime : 5.0 s
+Fs      : 512 Hz
+Duration: 265.1 s
+Windows : 527
+R-peaks : 462  (avg HR: 104.5 bpm)
+Iso Forest flags : 27
+GMM flags        : 11
+Score flags      : 14
+Ensemble flags   : 14
+Seizure DETECTED ✓
+  Onset    : 166.5 s
+  Offset   : 175.0 s
+  Duration : 8.5 s
+  PSI      : 92.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11017
+File    : 2FSZPCRC11017.csv
+Runtime : 4.3 s
+Fs      : 512 Hz
+Duration: 216.6 s
+Windows : 430
+R-peaks : 381  (avg HR: 108.3 bpm)
+Iso Forest flags : 22
+GMM flags        : 11
+Score flags      : 18
+Ensemble flags   : 17
+Seizure DETECTED ✓
+  Onset    : 112.5 s
+  Offset   : 216.5 s
+  Duration : 104.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11017
+File    : 2GSZPCRC11017.csv
+Runtime : 4.2 s
+Fs      : 512 Hz
+Duration: 216.7 s
+Windows : 430
+R-peaks : 397  (avg HR: 109.8 bpm)
+Iso Forest flags : 22
+GMM flags        : 11
+Score flags      : 13
+Ensemble flags   : 13
+Seizure DETECTED ✓
+  Onset    : 101.5 s
+  Offset   : 109.5 s
+  Duration : 8.0 s
+  PSI      : 86.0%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11017
+File    : 2HSZPCRC11017.csv
+Runtime : 3.7 s
+Fs      : 512 Hz
+Duration: 183.9 s
+Windows : 364
+R-peaks : 269  (avg HR: 87.8 bpm)
+Iso Forest flags : 19
+GMM flags        : 2
+Score flags      : 14
+Ensemble flags   : 14
+Seizure DETECTED ✓
+  Onset    : 57.5 s
+  Offset   : 168.0 s
+  Duration : 110.5 s
+  PSI      : 76.3%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11019
+File    : 2ASZPCRC11019.csv
+Runtime : 10.0 s
+Fs      : 512 Hz
+Duration: 532.1 s
+Windows : 1061
+R-peaks : 1180  (avg HR: 133.0 bpm)
+Iso Forest flags : 53
+GMM flags        : 10
+Score flags      : 20
+Ensemble flags   : 20
+Seizure DETECTED ✓
+  Onset    : 372.5 s
+  Offset   : 532.0 s
+  Duration : 159.5 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11019
+File    : 2BSZPCRC11019.csv
+Runtime : 6.6 s
+Fs      : 512 Hz
+Duration: 332.7 s
+Windows : 662
+R-peaks : 498  (avg HR: 89.8 bpm)
+Iso Forest flags : 34
+GMM flags        : 5
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 201.0 s
+  Offset   : 207.0 s
+  Duration : 6.0 s
+  PSI      : 72.5%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11019
+File    : 2CSZPCRC11019.csv
+Runtime : 4.7 s
+Fs      : 512 Hz
+Duration: 236.6 s
+Windows : 470
+R-peaks : 526  (avg HR: 133.3 bpm)
+Iso Forest flags : 24
+GMM flags        : 5
+Score flags      : 8
+Ensemble flags   : 8
+Seizure DETECTED ✓
+  Onset    : 86.0 s
+  Offset   : 91.5 s
+  Duration : 5.5 s
+  PSI      : 78.6%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11019
+File    : 2DSZPCRC11019.csv
+Runtime : 7.7 s
+Fs      : 512 Hz
+Duration: 425.2 s
+Windows : 847
+R-peaks : 577  (avg HR: 81.5 bpm)
+Iso Forest flags : 43
+GMM flags        : 7
+Score flags      : 18
+Ensemble flags   : 19
+Seizure DETECTED ✓
+  Onset    : 239.5 s
+  Offset   : 425.0 s
+  Duration : 185.5 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11019
+File    : 2ESZPCRC11019.csv
+Runtime : 4.7 s
+Fs      : 512 Hz
+Duration: 240.9 s
+Windows : 478
+R-peaks : 349  (avg HR: 87.1 bpm)
+Iso Forest flags : 24
+GMM flags        : 5
+Score flags      : 7
+Ensemble flags   : 7
+Seizure DETECTED ✓
+  Onset    : 108.5 s
+  Offset   : 113.5 s
+  Duration : 5.0 s
+  PSI      : 44.1%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11019
+File    : 2FSZPCRC11019.csv
+Runtime : 8.2 s
+Fs      : 512 Hz
+Duration: 433.6 s
+Windows : 864
+R-peaks : 713  (avg HR: 98.7 bpm)
+Iso Forest flags : 44
+GMM flags        : 4
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 264.0 s
+  Offset   : 270.0 s
+  Duration : 6.0 s
+  PSI      : 74.3%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11019
+File    : 2GSZPCRC11019.csv
+Runtime : 7.3 s
+Fs      : 512 Hz
+Duration: 386.5 s
+Windows : 770
+R-peaks : 630  (avg HR: 97.8 bpm)
+Iso Forest flags : 39
+GMM flags        : 5
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 230.0 s
+  Offset   : 236.0 s
+  Duration : 6.0 s
+  PSI      : 77.8%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11019
+File    : 2HSZPCRC11019.csv
+Runtime : 7.9 s
+Fs      : 512 Hz
+Duration: 423.0 s
+Windows : 843
+R-peaks : 733  (avg HR: 104.1 bpm)
+Iso Forest flags : 43
+GMM flags        : 5
+Score flags      : 14
+Ensemble flags   : 13
+Seizure DETECTED ✓
+  Onset    : 296.0 s
+  Offset   : 423.0 s
+  Duration : 127.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11019
+File    : 2ISZPCRC11019.csv
+Runtime : 5.3 s
+Fs      : 512 Hz
+Duration: 274.7 s
+Windows : 546
+R-peaks : 517  (avg HR: 112.9 bpm)
+Iso Forest flags : 28
+GMM flags        : 5
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 147.5 s
+  Offset   : 153.5 s
+  Duration : 6.0 s
+  PSI      : 63.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11024
+File    : 2ASZPCRC11024.csv
+Runtime : 6.7 s
+Fs      : 512 Hz
+Duration: 354.9 s
+Windows : 706
+R-peaks : 672  (avg HR: 113.5 bpm)
+Iso Forest flags : 36
+GMM flags        : 9
+Score flags      : 14
+Ensemble flags   : 14
+Seizure DETECTED ✓
+  Onset    : 147.0 s
+  Offset   : 219.5 s
+  Duration : 72.5 s
+  PSI      : 82.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11024
+File    : 2BSZPCRC11024.csv
+Runtime : 3.9 s
+Fs      : 512 Hz
+Duration: 194.1 s
+Windows : 385
+R-peaks : 333  (avg HR: 103.2 bpm)
+Iso Forest flags : 20
+GMM flags        : 38
+Score flags      : 23
+Ensemble flags   : 20
+Seizure DETECTED ✓
+  Onset    : 29.0 s
+  Offset   : 49.0 s
+  Duration : 20.0 s
+  PSI      : 65.7%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11024
+File    : 2CSZPCRC11024.csv
+Runtime : 5.7 s
+Fs      : 512 Hz
+Duration: 302.2 s
+Windows : 601
+R-peaks : 511  (avg HR: 101.6 bpm)
+Iso Forest flags : 30
+GMM flags        : 19
+Score flags      : 29
+Ensemble flags   : 29
+Seizure DETECTED ✓
+  Onset    : 120.5 s
+  Offset   : 136.5 s
+  Duration : 16.0 s
+  PSI      : 64.8%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11024
+File    : 2DSZPCRC11024.csv
+Runtime : 3.1 s
+Fs      : 512 Hz
+Duration: 150.7 s
+Windows : 298
+R-peaks : 240  (avg HR: 95.2 bpm)
+Iso Forest flags : 15
+GMM flags        : 9
+Score flags      : 15
+Ensemble flags   : 14
+Seizure DETECTED ✓
+  Onset    : 64.5 s
+  Offset   : 150.5 s
+  Duration : 86.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11024
+File    : 2ESZPCRC11024.csv
+Runtime : 5.4 s
+Fs      : 512 Hz
+Duration: 286.1 s
+Windows : 569
+R-peaks : 486  (avg HR: 101.8 bpm)
+Iso Forest flags : 29
+GMM flags        : 8
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 138.0 s
+  Offset   : 145.0 s
+  Duration : 7.0 s
+  PSI      : 73.6%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11024
+File    : 2FSZPCRC11024.csv
+Runtime : 4.0 s
+Fs      : 512 Hz
+Duration: 204.5 s
+Windows : 406
+R-peaks : 351  (avg HR: 103.2 bpm)
+Iso Forest flags : 21
+GMM flags        : 10
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 113.0 s
+  Offset   : 120.0 s
+  Duration : 7.0 s
+  PSI      : 90.2%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11024
+File    : 2GSZPCRC11024.csv
+Runtime : 4.4 s
+Fs      : 512 Hz
+Duration: 226.5 s
+Windows : 450
+R-peaks : 313  (avg HR: 82.8 bpm)
+Iso Forest flags : 23
+GMM flags        : 8
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 107.0 s
+  Offset   : 114.0 s
+  Duration : 7.0 s
+  PSI      : 90.2%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11024
+File    : 2ISZPCRC11024.csv
+Runtime : 3.1 s
+Fs      : 512 Hz
+Duration: 141.5 s
+Windows : 280
+R-peaks : 237  (avg HR: 101.7 bpm)
+Iso Forest flags : 14
+GMM flags        : 8
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 68.5 s
+  Offset   : 75.5 s
+  Duration : 7.0 s
+  PSI      : 90.2%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11024
+File    : 2JSZPCRC11024.csv
+Runtime : 5.5 s
+Fs      : 512 Hz
+Duration: 290.4 s
+Windows : 577
+R-peaks : 508  (avg HR: 104.9 bpm)
+Iso Forest flags : 29
+GMM flags        : 8
+Score flags      : 12
+Ensemble flags   : 12
+Seizure DETECTED ✓
+  Onset    : 211.0 s
+  Offset   : 218.5 s
+  Duration : 7.5 s
+  PSI      : 88.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11024
+File    : 2KSZPCRC11024.csv
+Runtime : 6.3 s
+Fs      : 512 Hz
+Duration: 333.0 s
+Windows : 663
+R-peaks : 588  (avg HR: 105.9 bpm)
+Iso Forest flags : 34
+GMM flags        : 7
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 221.5 s
+  Offset   : 228.5 s
+  Duration : 7.0 s
+  PSI      : 90.6%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11024
+File    : 2LSZPCRC11024.csv
+Runtime : 3.4 s
+Fs      : 512 Hz
+Duration: 167.7 s
+Windows : 332
+R-peaks : 295  (avg HR: 105.8 bpm)
+Iso Forest flags : 17
+GMM flags        : 7
+Score flags      : 11
+Ensemble flags   : 11
+Seizure DETECTED ✓
+  Onset    : 101.0 s
+  Offset   : 108.0 s
+  Duration : 7.0 s
+  PSI      : 87.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11026
+File    : 2ASZPCRC11026.csv
+Runtime : 5.5 s
+Fs      : 512 Hz
+Duration: 266.1 s
+Windows : 529
+R-peaks : 423  (avg HR: 95.2 bpm)
+Iso Forest flags : 27
+GMM flags        : 46
+Score flags      : 34
+Ensemble flags   : 32
+Seizure DETECTED ✓
+  Onset    : 25.0 s
+  Offset   : 266.0 s
+  Duration : 241.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11026
+File    : 2BSZPCRC11026.csv
+Runtime : 6.1 s
+Fs      : 512 Hz
+Duration: 304.2 s
+Windows : 605
+R-peaks : 522  (avg HR: 102.9 bpm)
+Iso Forest flags : 31
+GMM flags        : 44
+Score flags      : 64
+Ensemble flags   : 51
+Seizure DETECTED ✓
+  Onset    : 109.5 s
+  Offset   : 181.5 s
+  Duration : 72.0 s
+  PSI      : 67.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11026
+File    : 2CSZPCRC11026.csv
+Runtime : 7.2 s
+Fs      : 512 Hz
+Duration: 393.1 s
+Windows : 783
+R-peaks : 583  (avg HR: 89.4 bpm)
+Iso Forest flags : 40
+GMM flags        : 52
+Score flags      : 52
+Ensemble flags   : 52
+Seizure DETECTED ✓
+  Onset    : 237.0 s
+  Offset   : 332.5 s
+  Duration : 95.5 s
+  PSI      : 84.6%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11026
+File    : 2DSZPCRC11026.csv
+Runtime : 5.2 s
+Fs      : 512 Hz
+Duration: 274.7 s
+Windows : 546
+R-peaks : 466  (avg HR: 101.8 bpm)
+Iso Forest flags : 28
+GMM flags        : 22
+Score flags      : 74
+Ensemble flags   : 27
+Seizure DETECTED ✓
+  Onset    : 91.5 s
+  Offset   : 195.0 s
+  Duration : 103.5 s
+  PSI      : 86.4%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11026
+File    : 2ESZPCRC11026.csv
+Runtime : 1.9 s
+Fs      : 512 Hz
+Duration: 82.8 s
+Windows : 162
+R-peaks : 131  (avg HR: 94.5 bpm)
+Iso Forest flags : 9
+GMM flags        : 1
+Score flags      : 3
+Ensemble flags   : 3
+Seizure DETECTED ✓
+  Onset    : 79.5 s
+  Offset   : 82.5 s
+  Duration : 3.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11026
+File    : 2FSZPCRC11026.csv
+Runtime : 0.0 s
+Status  : ERROR
+Error   : ValueError: cannot convert float NaN to integer
+Traceback:
+Traceback (most recent call last):
+  File "c:\Users\AREEN PATIL\Desktop\self\ECT_EEG_Work\csv_8ch_512Hz\csv_8ch_512Hz\ect_batch_runner_v4.py", line 422, in main
+    result  = run_pipeline(filepath)
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\AREEN PATIL\Desktop\self\ECT_EEG_Work\csv_8ch_512Hz\csv_8ch_512Hz\ect_batch_runner_v4.py", line 150, in run_pipeline
+    FS   = infer_fs(time)
+           ^^^^^^^^^^^^^^
+  File "c:\Users\AREEN PATIL\Desktop\self\ECT_EEG_Work\csv_8ch_512Hz\csv_8ch_512Hz\ect_batch_runner_v4.py", line 60, in infer_fs
+    return round(1.0 / dt)
+           ^^^^^^^^^^^^^^^
+ValueError: cannot convert float NaN to integer
+
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11026
+File    : 2GSZPCRC11026.csv
+Runtime : 5.7 s
+Fs      : 512 Hz
+Duration: 288.7 s
+Windows : 574
+R-peaks : 456  (avg HR: 98.0 bpm)
+Iso Forest flags : 29
+GMM flags        : 40
+Score flags      : 45
+Ensemble flags   : 43
+Seizure DETECTED ✓
+  Onset    : 178.5 s
+  Offset   : 275.0 s
+  Duration : 96.5 s
+  PSI      : 37.0%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11026
+File    : 2HSZPCRC11026.csv
+Runtime : 3.7 s
+Fs      : 512 Hz
+Duration: 189.9 s
+Windows : 376
+R-peaks : 261  (avg HR: 82.5 bpm)
+Iso Forest flags : 19
+GMM flags        : 35
+Score flags      : 34
+Ensemble flags   : 35
+Seizure DETECTED ✓
+  Onset    : 97.5 s
+  Offset   : 116.5 s
+  Duration : 19.0 s
+  PSI      : 2.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11026
+File    : 2ISZPCRC11026.csv
+Runtime : 5.4 s
+Fs      : 512 Hz
+Duration: 280.4 s
+Windows : 557
+R-peaks : 433  (avg HR: 92.6 bpm)
+Iso Forest flags : 28
+GMM flags        : 62
+Score flags      : 62
+Ensemble flags   : 62
+Seizure DETECTED ✓
+  Onset    : 134.0 s
+  Offset   : 231.0 s
+  Duration : 97.0 s
+  PSI      : 90.4%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11026
+File    : 2JSZPCRC11026.csv
+Runtime : 4.5 s
+Fs      : 512 Hz
+Duration: 229.1 s
+Windows : 455
+R-peaks : 348  (avg HR: 91.1 bpm)
+Iso Forest flags : 23
+GMM flags        : 82
+Score flags      : 73
+Ensemble flags   : 80
+Seizure DETECTED ✓
+  Onset    : 93.0 s
+  Offset   : 229.0 s
+  Duration : 136.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11026
+File    : 2KSZPCRC11026.csv
+Runtime : 5.4 s
+Fs      : 512 Hz
+Duration: 291.9 s
+Windows : 580
+R-peaks : 491  (avg HR: 101.8 bpm)
+Iso Forest flags : 29
+GMM flags        : 8
+Score flags      : 44
+Ensemble flags   : 18
+Seizure DETECTED ✓
+  Onset    : 213.5 s
+  Offset   : 237.5 s
+  Duration : 24.0 s
+  PSI      : 93.6%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2ASZPCRC11028.csv
+Runtime : 5.8 s
+Fs      : 512 Hz
+Duration: 309.1 s
+Windows : 615
+R-peaks : 578  (avg HR: 112.4 bpm)
+Iso Forest flags : 31
+GMM flags        : 8
+Score flags      : 12
+Ensemble flags   : 12
+Seizure DETECTED ✓
+  Onset    : 104.0 s
+  Offset   : 151.0 s
+  Duration : 47.0 s
+  PSI      : 59.5%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2CSZPCRC11028.csv
+Runtime : 2.8 s
+Fs      : 512 Hz
+Duration: 137.0 s
+Windows : 271
+R-peaks : 278  (avg HR: 122.3 bpm)
+Iso Forest flags : 14
+GMM flags        : 23
+Score flags      : 16
+Ensemble flags   : 17
+Seizure DETECTED ✓
+  Onset    : 19.0 s
+  Offset   : 137.0 s
+  Duration : 118.0 s
+  PSI      : N/A
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2DSZPCRC11028.csv
+Runtime : 3.7 s
+Fs      : 512 Hz
+Duration: 192.5 s
+Windows : 382
+R-peaks : 376  (avg HR: 117.2 bpm)
+Iso Forest flags : 20
+GMM flags        : 4
+Score flags      : 8
+Ensemble flags   : 8
+Seizure DETECTED ✓
+  Onset    : 88.5 s
+  Offset   : 94.0 s
+  Duration : 5.5 s
+  PSI      : 89.7%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2ESZPCRC11028.csv
+Runtime : 4.7 s
+Fs      : 512 Hz
+Duration: 245.4 s
+Windows : 487
+R-peaks : 446  (avg HR: 108.9 bpm)
+Iso Forest flags : 25
+GMM flags        : 7
+Score flags      : 21
+Ensemble flags   : 21
+Seizure DETECTED ✓
+  Onset    : 108.0 s
+  Offset   : 120.0 s
+  Duration : 12.0 s
+  PSI      : 86.2%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2FSZPCRC11028.csv
+Runtime : 4.0 s
+Fs      : 512 Hz
+Duration: 203.4 s
+Windows : 403
+R-peaks : 380  (avg HR: 112.0 bpm)
+Iso Forest flags : 21
+GMM flags        : 7
+Score flags      : 18
+Ensemble flags   : 18
+Seizure DETECTED ✓
+  Onset    : 77.0 s
+  Offset   : 87.5 s
+  Duration : 10.5 s
+  PSI      : 84.8%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2GSZPCRC11028.csv
+Runtime : 4.5 s
+Fs      : 512 Hz
+Duration: 239.0 s
+Windows : 475
+R-peaks : 454  (avg HR: 113.9 bpm)
+Iso Forest flags : 24
+GMM flags        : 5
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 116.0 s
+  Offset   : 122.0 s
+  Duration : 6.0 s
+  PSI      : 80.7%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2HSZPCRC11028.csv
+Runtime : 4.0 s
+Fs      : 512 Hz
+Duration: 197.5 s
+Windows : 392
+R-peaks : 396  (avg HR: 120.1 bpm)
+Iso Forest flags : 20
+GMM flags        : 7
+Score flags      : 16
+Ensemble flags   : 13
+Seizure DETECTED ✓
+  Onset    : 81.5 s
+  Offset   : 93.5 s
+  Duration : 12.0 s
+  PSI      : 74.0%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2ISZPCRC11028.csv
+Runtime : 3.0 s
+Fs      : 512 Hz
+Duration: 136.6 s
+Windows : 270
+R-peaks : 286  (avg HR: 126.1 bpm)
+Iso Forest flags : 14
+GMM flags        : 10
+Score flags      : 10
+Ensemble flags   : 10
+Seizure DETECTED ✓
+  Onset    : 24.0 s
+  Offset   : 30.5 s
+  Duration : 6.5 s
+  PSI      : 78.7%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2KSZPCRC11028.csv
+Runtime : 4.0 s
+Fs      : 512 Hz
+Duration: 191.9 s
+Windows : 380
+R-peaks : 401  (avg HR: 125.4 bpm)
+Iso Forest flags : 19
+GMM flags        : 6
+Score flags      : 8
+Ensemble flags   : 8
+Seizure DETECTED ✓
+  Onset    : 78.5 s
+  Offset   : 84.0 s
+  Duration : 5.5 s
+  PSI      : 83.5%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2LSZPCRC11028.csv
+Runtime : 4.3 s
+Fs      : 512 Hz
+Duration: 216.5 s
+Windows : 430
+R-peaks : 429  (avg HR: 118.7 bpm)
+Iso Forest flags : 22
+GMM flags        : 4
+Score flags      : 8
+Ensemble flags   : 8
+Seizure DETECTED ✓
+  Onset    : 83.5 s
+  Offset   : 89.0 s
+  Duration : 5.5 s
+  PSI      : 91.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2MSZPCRC11028.csv
+Runtime : 4.3 s
+Fs      : 512 Hz
+Duration: 210.1 s
+Windows : 417
+R-peaks : 460  (avg HR: 131.5 bpm)
+Iso Forest flags : 21
+GMM flags        : 5
+Score flags      : 9
+Ensemble flags   : 9
+Seizure DETECTED ✓
+  Onset    : 90.0 s
+  Offset   : 96.0 s
+  Duration : 6.0 s
+  PSI      : 79.9%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2NSZPCRC11028.csv
+Runtime : 4.0 s
+Fs      : 512 Hz
+Duration: 187.1 s
+Windows : 371
+R-peaks : 356  (avg HR: 114.9 bpm)
+Iso Forest flags : 19
+GMM flags        : 4
+Score flags      : 8
+Ensemble flags   : 8
+Seizure DETECTED ✓
+  Onset    : 81.5 s
+  Offset   : 87.0 s
+  Duration : 5.5 s
+  PSI      : 79.2%
+────────────────────────────────────────────────────────────
+Patient : SZPCRC11028
+File    : 2OSZPCRC11028.csv
+Runtime : 4.7 s
+Fs      : 512 Hz
+Duration: 224.5 s
+Windows : 446
+R-peaks : 398  (avg HR: 106.5 bpm)
+Iso Forest flags : 23
+GMM flags        : 5
+Score flags      : 8
+Ensemble flags   : 8
+Seizure DETECTED ✓
+  Onset    : 108.5 s
+  Offset   : 114.0 s
+  Duration : 5.5 s
+  PSI      : 63.9%
+============================================================
+Finished : 2026-03-18 04:04:09
+Total    : 97
+Success  : 94
+Errors   : 3
+Seizures : 92 / 94 successful files
